@@ -1,6 +1,6 @@
 /*!
- * Vue.js v2.6.14
- * (c) 2014-2021 Evan You
+ * Vue.js v2.6.15
+ * (c) 2014-2022 Evan You
  * Released under the MIT License.
  */
 (function (global, factory) {
@@ -5487,7 +5487,7 @@
     value: FunctionalRenderContext
   });
 
-  Vue.version = '2.6.14';
+  Vue.version = '2.6.15';
 
   /*  */
 
