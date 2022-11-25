@@ -705,7 +705,11 @@ Dep.prototype.addSub = function addSub (sub) {
 };
 
 Dep.prototype.removeSub = function removeSub (sub) {
-  remove(this.subs, sub);
+  this.subs[this.subs.indexOf(sub)] = null
+  if (!this._pending) {
+    this._pending = true
+    pendingCleanupDeps.push(this)
+  }
 };
 
 Dep.prototype.depend = function depend () {
